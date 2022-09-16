@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <div>
+
+            <div class="container">
+                <div class="image">
+    
+                    <div class="header">
+                        <h2 class="h1">Query Results</h2>
+                    </div>
+                    <div class="t1">
+    
+                        <table class="content-table" border="1">
+                            {% for r in content[1] %}
+    
+                            <th>{{r}}</th>
+    
+                            {% endfor %}
+                            {% for r in content[0] %}
+                            <tr>
+                                {% for i in range(r|length) %}
+                                <td>{{r[i]}}</td>
+                                {% endfor %}
+                            </tr>
+                            {% endfor %}
+    
+    
+                        </table>
+                    </div>
+    
+    
+                </div>
+    
+                <!-- {% for r in content: %}
+        <p>{{r}}</p>
+    {% endfor%} -->
+    
+    </body>
+    
+  
+</html>
